@@ -4,10 +4,20 @@
 |-------------|----------|
 | Document | INT-001_Integration_Hub |
 | Proiect | ESTINVEST Ecosystem |
-| Versiune | 1.0 |
+| Versiune | 1.1 |
 | Status | Approved |
 | Domeniu | Enterprise Integration |
 | Data | Iulie 2026 |
+| Ultima actualizare | 2026-10-06 |
+
+---
+
+# Change Log
+
+| Versiune | Data | Modificări |
+|----------|------|------------|
+| 1.0 | Iulie 2026 | Prima versiune |
+| 1.1 | 2026-10-06 | Aliniere cu ADR-005 și ADR-006 privind boundary-ul Integration Hub și traseul prin ESTINVEST Gateway |
 
 ---
 
@@ -15,17 +25,17 @@
 
 Acest document definește arhitectura și responsabilitățile Integration Hub din ecosistemul ESTINVEST.
 
-Integration Hub reprezintă componenta unică prin care aplicațiile interne comunică cu sistemele externe.
+Integration Hub reprezintă boundary-ul BackOffice față de sistemele externe.
 
 ---
 
 # 2. Viziune
 
-Nicio aplicație din ecosistem nu comunică direct cu sisteme externe.
+Integration Hub acționează ca un strat de integrare, transformare, securizare și monitorizare a comunicațiilor externe ale BackOffice.
 
-Toate comunicațiile externe sunt realizate exclusiv prin Integration Hub.
+Comunicațiile externe de business ale BackOffice sunt realizate prin Integration Hub.
 
-Acesta acționează ca un strat de integrare, transformare, securizare și monitorizare a comunicațiilor.
+ESTtrade poate consuma direct din ESTINVEST Gateway numai market data read-only, conform ADR-005. Această excepție nu autorizează trading direct și nu schimbă Integration Hub ca business boundary pentru BackOffice.
 
 ---
 
@@ -44,9 +54,11 @@ Integration Hub urmărește:
 
 # 4. Principii arhitecturale
 
-## Single Gateway
+## Single Integration Boundary
 
-Există un singur punct oficial de integrare.
+Integration Hub este punctul oficial de integrare externă pentru BackOffice.
+
+Nu este ESTINVEST Gateway și nu este BVB / Arena Gateway.
 
 ---
 
@@ -78,7 +90,7 @@ Toate comunicațiile sunt autentificate și criptate.
 
 Integration Hub gestionează comunicația cu:
 
-- BVB Gateway;
+- BVB / Arena Gateway, prin ESTINVEST Gateway;
 - Depozitarul Central;
 - Banca de decontare;
 - Custozi externi;
@@ -88,6 +100,28 @@ Integration Hub gestionează comunicația cu:
 - Servicii de notificare (e-mail, SMS, push).
 
 Lista este extensibilă.
+
+Pentru conectivitatea business către BVB:
+
+BackOffice → Integration Hub → ESTINVEST Gateway → BVB / Arena Gateway
+
+Retur:
+
+BVB / Arena Gateway → ESTINVEST Gateway → Integration Hub → BackOffice
+
+BackOffice nu comunică direct cu ESTINVEST Gateway.
+
+ESTINVEST Gateway este serviciul specializat de market connectivity aflat în aval de Integration Hub. Integration Hub nu implementează protocolul Arena ca model BackOffice.
+
+ESTINVEST Gateway izolează Arena protocol, Arena XML și Arena DTOs față de BackOffice.
+
+Integration Hub comunică cu ESTINVEST Gateway printr-un contract intern ESTINVEST: request/response pentru request-urile inițiate prin Hub; evenimente/notificări asincrone Gateway → Hub pentru confirmations, trades și rejects relevante. Arena DTO/XML nu sunt modele BackOffice.
+
+Distincție de denumire:
+
+- Integration Hub = integrare generică business / external boundary;
+- ESTINVEST Gateway = serviciu propriu de market connectivity;
+- BVB / Arena Gateway = infrastructura externă BVB.
 
 ---
 
@@ -107,27 +141,18 @@ Integration Hub deservește:
 # 7. Model logic
 
 ```text
-                  Integration Hub
+BackOffice
+    │
+    ▼
+Integration Hub
+    │
+    ▼
+ESTINVEST Gateway
+    │
+    ▼
+BVB / Arena Gateway
 
-      ┌───────────────┼────────────────┐
-      │               │                │
-      ▼               ▼                ▼
- BackOffice      ESTtrade        Onboarding
-      │
-      ▼
-Business Events
-      │
-      ▼
-Integration Services
-      │
-      ▼
-Message Transformation
-      │
-      ▼
-External Connectors
-      │
-      ▼
-External Systems
+ESTtrade ── market data read-only ──► ESTINVEST Gateway
 ```
 
 ---
@@ -136,19 +161,23 @@ External Systems
 
 ## API Gateway
 
-Expune serviciile Integration Hub către aplicațiile interne.
+Expune serviciile Integration Hub către aplicațiile interne. Nu este ESTINVEST Gateway și nu este BVB / Arena Gateway.
 
 ---
 
 ## Connector Manager
 
-Gestionează conectorii pentru fiecare sistem extern.
+Gestionează conectorii pentru sistemele externe.
+
+Pentru BVB, Integration Hub nu este client Arena; conectivitatea de piață este ESTINVEST Gateway, în aval de Hub.
 
 ---
 
 ## Message Transformer
 
-Transformă mesajele între formatele interne și cele externe.
+Transformă mesajele între formatele interne și cele externe, în limitele contractelor Hub.
+
+Pentru BVB, Arena protocol / XML / DTOs nu sunt modele BackOffice; traducerea Arena este responsabilitatea ESTINVEST Gateway.
 
 ---
 
@@ -248,4 +277,13 @@ Prin centralizarea comunicațiilor externe, acesta oferă:
 - scalabilitate;
 - independență față de sistemele externe.
 
-Toate aplicațiile ecosistemului trebuie să utilizeze Integration Hub pentru orice integrare externă.
+Toate aplicațiile ecosistemului trebuie să utilizeze Integration Hub pentru integrările externe de business, cu excepția market data read-only ESTtrade → ESTINVEST Gateway, conform ADR-005.
+
+---
+
+# Version History
+
+| Versiune | Data | Modificări |
+|----------|------|------------|
+| 1.0 | Iulie 2026 | Prima versiune |
+| 1.1 | 2026-10-06 | Aliniere cu ADR-005 și ADR-006 privind boundary-ul Integration Hub și traseul prin ESTINVEST Gateway |
