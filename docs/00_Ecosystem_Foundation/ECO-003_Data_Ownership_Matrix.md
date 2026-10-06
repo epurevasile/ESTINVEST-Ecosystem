@@ -178,7 +178,7 @@ Modalitatea prin care informația circulă între aplicații.
 
 | Ordine | ESTtrade / Broker | BackOffice | BackOffice | ESTtrade | REST API |
 
-| Execuții | Gateway BVB | BackOffice | BackOffice | ESTtrade | REST API |
+| Execuții | BVB / Arena Gateway | BackOffice | BackOffice | ESTtrade | prin ESTINVEST Gateway și Integration Hub |
 
 | Settlement | BackOffice | BackOffice | BackOffice | Reporting | REST API |
 
@@ -308,13 +308,16 @@ Primește exclusiv date publicate de BackOffice.
 
 
 
-\## Gateway BVB → BackOffice
+\## BVB / Arena Gateway → ESTINVEST Gateway → Integration Hub → BackOffice
 
 
 
-Execuțiile sunt preluate de BackOffice.
+Execuțiile sunt preluate de BackOffice pe traseul:
 
-
+BVB / Arena Gateway
+→ ESTINVEST Gateway
+→ Integration Hub
+→ BackOffice
 
 BackOffice actualizează Unified Ledger.
 
