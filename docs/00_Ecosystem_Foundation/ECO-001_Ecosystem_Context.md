@@ -542,7 +542,19 @@ ESTINVEST Test           ESTtrade
 
 &#x20;       │
 
-&#x20;       ├────────► Gateway BVB
+&#x20;       ▼
+
+&#x20; Integration Hub
+
+&#x20;       │
+
+&#x20;       ├────────► ESTINVEST Gateway
+
+&#x20;       │                 │
+
+&#x20;       │                 ▼
+
+&#x20;       │         BVB / Arena Gateway
 
 &#x20;       │
 
