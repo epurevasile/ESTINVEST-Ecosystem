@@ -364,13 +364,17 @@ Documentarea API-urilor se realizează prin OpenAPI (Swagger).
 
 | REST API | Comunicare între aplicații |
 
-| FIX | Gateway BVB |
+| Arena Gateway Protocol 3.1.4 (TCP/IP + XML) | BVB / Arena Gateway prin ESTINVEST Gateway |
 
 | HTTPS | Comunicare securizată |
 
 | Batch Import/Export | Procese programate, unde este necesar |
 
 | WebSocket | Actualizări în timp real (ESTtrade) |
+
+
+
+FIX Protocol nu este protocolul BVB v1. Rolul FIX pentru alte piețe sau intermediari externi nu este stabilit în acest document.
 
 
 
