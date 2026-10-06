@@ -351,7 +351,9 @@ Platforma utilizată de clienți și brokeri pentru tranzacționare.
 
 Nu.
 
-Consumă exclusiv servicii furnizate de BackOffice Core.
+Consumă exclusiv servicii furnizate de BackOffice Core pentru operațiile de business.
+
+ESTtrade poate consuma direct din ESTINVEST Gateway numai market data read-only, conform ADR-005. Această cale nu autorizează trading direct către Gateway sau BVB.
 
 ## Repository
 
@@ -380,6 +382,16 @@ Interfața dintre aplicațiile ESTINVEST și infrastructura Bursei de Valori Buc
 - sincronizarea statusurilor;
 - gestionarea conexiunilor principale și de rezervă.
 
+Pentru fluxurile business către BVB / Arena Gateway, traseul canonic este:
+
+BackOffice → Integration Hub → ESTINVEST Gateway → BVB / Arena Gateway
+
+și retur:
+
+BVB / Arena Gateway → ESTINVEST Gateway → Integration Hub → BackOffice
+
+BackOffice nu comunică direct cu ESTINVEST Gateway pentru fluxurile business. Integration Hub rămâne boundary-ul BackOffice față de sistemele externe.
+
 ## System of Record
 
 Nu.
@@ -398,7 +410,19 @@ Planned
 
 ## Scop
 
-Simularea completă a Gateway-ului BVB pentru dezvoltare și testare.
+Simularea Arena Gateway pentru dezvoltare și testare în cadrul ecosistemului ESTINVEST Gateway.
+
+## Ownership / lifecycle
+
+Aparține ESTINVEST Gateway (repository `ESTINVEST-Gateway`).
+
+## Rol
+
+Test double pentru Arena Gateway.
+
+Nu este protocol authority.
+
+Succesul local Connector ↔ Simulator nu demonstrează BVB compliance.
 
 ## Responsabilități
 
@@ -484,21 +508,25 @@ Responsabilitățile aplicațiilor sunt strict delimitate.
                     │
                     ▼
       ESTINVEST BackOffice Core
-                    │
-      ┌─────────────┼──────────────┐
-      │             │              │
-      ▼             ▼              ▼
- ESTtrade     Reporting      Notification
-      │
-      ▼
- Gateway Connector
-      │
-      ▼
- Bursa de Valori București
-      │
-      ▼
- Depozitarul Central
+           │
+           ├──────────► ESTtrade
+           ├──────────► Reporting
+           ├──────────► Notification
+           │
+           ▼
+    Integration Hub
+           │
+           ▼
+   ESTINVEST Gateway
+           │
+           ▼
+  BVB / Arena Gateway
+           │
+           ▼
+  Depozitarul Central
 ```
+
+Notă: ESTtrade poate consuma direct din ESTINVEST Gateway numai market data read-only (ADR-005). Operațiile de trading rămân ESTtrade → BackOffice → Integration Hub → ESTINVEST Gateway.
 
 ---
 
@@ -588,23 +616,29 @@ BackOffice Core
 Validări
        │
        ▼
-Gateway Connector
+Integration Hub
        │
        ▼
-Bursa de Valori București
+ESTINVEST Gateway
+       │
+       ▼
+BVB / Arena Gateway
 ```
 
-Toate validările operaționale sunt efectuate în BackOffice Core înainte de transmiterea ordinului către piață.
+Toate validările operaționale sunt efectuate în BackOffice Core înainte de transmiterea ordinului către piață. BackOffice nu comunică direct cu ESTINVEST Gateway pentru fluxurile business.
 
 ---
 
 ## 12.3 Execuția ordinului
 
 ```text
-Bursa de Valori București
+BVB / Arena Gateway
            │
            ▼
-Gateway Connector
+ESTINVEST Gateway
+           │
+           ▼
+Integration Hub
            │
            ▼
 BackOffice Core
@@ -621,7 +655,7 @@ BackOffice Core
                      ESTtrade
 ```
 
-Execuția ordinului actualizează simultan toate componentele operaționale relevante.
+Execuția ordinului actualizează simultan toate componentele operaționale relevante. Ownership-ul business (Order / Trade / Ledger) rămâne la BackOffice; ESTINVEST Gateway nu este System of Record.
 
 ---
 
