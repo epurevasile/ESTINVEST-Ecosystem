@@ -102,27 +102,33 @@ Nu este permis:
 
 \&#x20;                      │
 
-\&#x20;       ┌──────────────┼──────────────┐
+\&#x20;                      ├──────────► ESTtrade
 
-\&#x20;       │              │              │
+\&#x20;                      ├──────────► Reporting
 
-\&#x20;       ▼              ▼              ▼
+\&#x20;                      ├──────────► Notification
 
-\&#x20;  ESTtrade     Reporting      Notification
+\&#x20;                      │
 
-\&#x20;       │
+\&#x20;                      ▼
 
-\&#x20;       ▼
+\&#x20;              Integration Hub
 
-\&#x20;Gateway BVB
+\&#x20;                      │
 
-\&#x20;       │
+\&#x20;                      ▼
 
-\&#x20;       ▼
+\&#x20;             ESTINVEST Gateway
 
-Depozitarul Central
+\&#x20;                      │
+
+\&#x20;                      ▼
+
+\&#x20;          BVB / Arena Gateway
 
 ```
+
+Notă: traseul business este BackOffice → Integration Hub → ESTINVEST Gateway → BVB / Arena Gateway. ESTtrade, Reporting și Notification sunt componente distincte consumatoare ale BackOffice; Integration Hub nu este copil al Reporting.
 
 
 
@@ -200,19 +206,51 @@ ESTtrade nu modifică direct datele operaționale.
 
 
 
+Pentru trading / operații business, traseul este:
+
+
+
+ESTtrade → BackOffice → Integration Hub → ESTINVEST Gateway → BVB / Arena Gateway
+
+
+
+ESTtrade poate consuma direct din ESTINVEST Gateway numai market data read-only, conform ADR-005. Această excepție nu autorizează trading direct.
+
+
+
 \---
 
 
 
-\# 6. Integrarea cu Gateway BVB
+\# 6. Integrarea cu ESTINVEST Gateway / BVB Arena Gateway
 
 
 
-BackOffice transmite ordinele către Gateway.
+Pentru fluxurile business, traseul canonic este:
 
 
 
-Gateway transmite:
+BackOffice → Integration Hub → ESTINVEST Gateway → BVB / Arena Gateway
+
+
+
+Retur:
+
+
+
+BVB / Arena Gateway → ESTINVEST Gateway → Integration Hub → BackOffice
+
+
+
+BackOffice nu comunică direct cu ESTINVEST Gateway pentru fluxurile business. Integration Hub rămâne boundary-ul BackOffice față de sistemele externe.
+
+
+
+Integration Hub comunică cu ESTINVEST Gateway printr-un contract intern ESTINVEST. ESTINVEST Gateway izolează Arena protocol / XML / DTOs de BackOffice; Arena nu este expusă ca model aplicațional BackOffice.
+
+
+
+ESTINVEST Gateway transmite către Integration Hub ca evenimente/notificări asincrone, conform ADR-006:
 
 
 
@@ -226,7 +264,7 @@ Gateway transmite:
 
 
 
-BackOffice actualizează Unified Ledger.
+BackOffice actualizează Unified Ledger. ESTINVEST Gateway nu este System of Record pentru Order / Trade.
 
 
 
