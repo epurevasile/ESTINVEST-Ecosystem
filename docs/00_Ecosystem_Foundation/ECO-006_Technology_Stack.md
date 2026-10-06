@@ -286,9 +286,9 @@ Tehnologiile sunt selectate conform următoarelor principii:
 
 | Internal APIs | REST |
 
-| External Trading | FIX Protocol |
+| BVB Market Connectivity | ESTINVEST Gateway către BVB / Arena Gateway; Arena Gateway Protocol 3.1.4 (TCP/IP + XML); XSD = structural baseline (ADR-008). Proveniența oficială BVB a XSD-urilor locale nu este afirmată aici. |
 
-| Market Connectivity | BVB Gateway |
+| FIX Protocol | Nu este protocolul BVB v1. Rolul pentru alte piețe / intermediari externi nu este stabilit în acest document (OPEN — necesită decizie separată). |
 
 | Messaging | JSON |
 
@@ -387,6 +387,10 @@ Utilizarea altor tehnologii este permisă numai dacă:
 \- ECO-002 – System Landscape
 
 \- ECO-004 – Integration Architecture
+
+\- ADR-005 – ESTINVEST Gateway System Boundary and Role
+
+\- ADR-008 – BVB Arena Gateway Protocol Compliance
 
 \- STD-APP-001 – Application Documentation Standard
 
