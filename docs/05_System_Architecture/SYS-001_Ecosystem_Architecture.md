@@ -4,10 +4,20 @@
 |-------------|----------|
 | Document | SYS-001_Ecosystem_Architecture |
 | Proiect | ESTINVEST Ecosystem |
-| Versiune | 1.0 |
+| Versiune | 1.1 |
 | Status | Approved |
 | Domeniu | Enterprise Architecture |
 | Data | Iulie 2026 |
+| Ultima actualizare | 2026-10-06 |
+
+---
+
+# Change Log
+
+| Versiune | Data | Modificări |
+|----------|------|------------|
+| 1.0 | Iulie 2026 | Prima versiune |
+| 1.1 | 2026-10-06 | Aliniere cu ADR-005 privind boundary-ul Integration Hub, ESTINVEST Gateway și excepția market data read-only |
 
 ---
 
@@ -103,7 +113,7 @@ Responsabilități:
 
 Responsabilități:
 
-- integrarea cu BVB;
+- integrarea business cu BVB prin ESTINVEST Gateway;
 - integrarea cu Depozitarul Central;
 - integrarea cu banca de decontare;
 - integrarea cu custozi externi;
@@ -179,10 +189,12 @@ Responsabilități:
                      │
      ┌───────────────┼─────────────────────┐
      ▼               ▼                     ▼
- Banking API   BVB Gateway      Depozitarul Central
+ Banking API   ESTINVEST Gateway   Depozitarul Central
                      │
                      ▼
-              Piețe Externe
+              BVB / Arena Gateway
+
+ESTtrade ── market data read-only ──► ESTINVEST Gateway
 ```
 
 ---
@@ -245,14 +257,23 @@ IAM este proprietarul identităților și al drepturilor de acces.
 
 # 8. Integrarea
 
-Toate comunicațiile externe utilizează Integration Hub.
+Comunicațiile externe de business ale BackOffice utilizează Integration Hub.
 
-Nu este permisă conectarea directă a unei aplicații la:
+Nu este permisă conectarea directă a unei aplicații la sistemele externe pentru business:
 
 - BVB;
 - Depozitarul Central;
 - banca de decontare;
 - custozi externi.
+
+Pentru BVB, traseul business este:
+
+BackOffice
+→ Integration Hub
+→ ESTINVEST Gateway
+→ BVB / Arena Gateway
+
+Excepție aprobată (ADR-005): ESTtrade poate consuma direct din ESTINVEST Gateway numai market data read-only. Această excepție nu autorizează trading direct și nu reprezintă un bypass general al BackOffice sau Integration Hub.
 
 ---
 
@@ -330,4 +351,11 @@ SYS-001 definește arhitectura oficială a ecosistemului ESTINVEST.
 
 El reprezintă fundamentul pe baza căruia sunt proiectate și dezvoltate toate aplicațiile din ecosistem, asigurând o separare clară a responsabilităților, o integrare coerentă și o evoluție controlată a platformei.
 
- 
+---
+
+# Version History
+
+| Versiune | Data | Modificări |
+|----------|------|------------|
+| 1.0 | Iulie 2026 | Prima versiune |
+| 1.1 | 2026-10-06 | Aliniere cu ADR-005 privind boundary-ul Integration Hub, ESTINVEST Gateway și excepția market data read-only |
