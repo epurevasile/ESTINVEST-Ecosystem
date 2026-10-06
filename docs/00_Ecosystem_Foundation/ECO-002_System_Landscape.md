@@ -10,7 +10,7 @@
 | Clasificare | Internal |
 | Owner | Enterprise Architecture |
 | Repository | ESTINVEST-Ecosystem |
-| Ultima actualizare | 07 Iulie 2026 |
+| Ultima actualizare | 2026-10-06 |
 | Autor | ESTINVEST & ChatGPT |
 
 ---
@@ -727,8 +727,11 @@ Reporting Service utilizează exclusiv date validate provenite din BackOffice Co
 
 ## Comunicare cu Bursa de Valori București
 
-- FIX Protocol
-- Gateway BVB
+- ESTINVEST Gateway către BVB / Arena Gateway
+- Arena Gateway Protocol 3.1.4 (TCP/IP + XML)
+- XSD = baseline structural local, conform ADR-008
+
+FIX Protocol nu este protocolul BVB v1. Rolul FIX pentru alte piețe sau intermediari externi nu este stabilit în acest document.
 
 ---
 
