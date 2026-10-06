@@ -12,7 +12,7 @@
 
 | Categorie | Ecosystem Foundation |
 
-| Versiune | 1.0 |
+| Versiune | 1.1 |
 
 | Status | Active |
 
@@ -22,7 +22,7 @@
 
 | Owner | Enterprise Architecture |
 
-| Ultima actualizare | 2026-07-07 |
+| Ultima actualizare | 2026-10-06 |
 
 
 
@@ -39,6 +39,8 @@
 |----------|------|------------|
 
 | 1.0 | 2026-07-07 | Prima versiune |
+
+| 1.1 | 2026-10-06 | Actualizare status proiect și documentație; aliniere ESTINVEST Gateway cu ADR-005…ADR-010 |
 
 
 
@@ -88,9 +90,9 @@ Scopul este:
 
 | ESTtrade | 🔵 În proiectare | Documentație existentă |
 
-| Gateway Connector | ⚪ Planificat | Va urma după BackOffice |
+| ESTINVEST Gateway | ⚪ Planificat | Market connectivity BVB; baseline arhitectural aprobat prin ADR-005…ADR-010; implementarea nu este începută |
 
-| Gateway Simulator | ⚪ Planificat | Pentru dezvoltare și testare |
+| Arena Gateway Simulator | ⚪ Planificat | Test double pentru development/test al ESTINVEST Gateway; nu este protocol authority |
 
 | Reporting Service | ⚪ Planificat | |
 
@@ -160,25 +162,25 @@ Legenda:
 
 |----------|--------|
 
-| ECO-001 | ✅ |
+| ECO-001 | Draft |
 
-| ECO-002 | ✅ |
+| ECO-002 | Draft |
 
-| ECO-003 | ✅ |
+| ECO-003 | Draft |
 
-| ECO-004 | ✅ |
+| ECO-004 | Draft |
 
-| ECO-005 | ✅ |
+| ECO-005 | Draft |
 
-| ECO-006 | ✅ |
+| ECO-006 | Approved |
 
-| ECO-007 | ✅ |
+| ECO-007 | Approved |
 
-| ECO-008 | ✅ |
+| ECO-008 | Approved |
 
-| ECO-009 | ✅ |
+| ECO-009 | Approved |
 
-| ECO-010 | ✅ |
+| ECO-010 | Active |
 
 
 
@@ -288,7 +290,7 @@ Dezvoltarea platformei \*\*ESTtrade\*\*.
 
 
 
-Implementarea Gateway Connector și Gateway Simulator.
+Implementarea ESTINVEST Gateway și Arena Gateway Simulator.
 
 
 
@@ -458,6 +460,20 @@ Acest document se actualizează:
 
 \- STD-DEV-001 – Development Workflow Standard
 
+\- ADR-005 – ESTINVEST Gateway System Boundary and Role
+
+\- ADR-006 – Integration Hub ↔ ESTINVEST Gateway Communication Architecture
+
+\- ADR-007 – ESTINVEST Gateway Technical Persistence and Reliable Delivery
+
+\- ADR-008 – BVB Arena Gateway Protocol Compliance
+
+\- ADR-009 – Gateway Connector Reuse and Arena Simulator Strategy
+
+\- ADR-010 – ESTINVEST Gateway v1 Functional Scope
+
+\- INT-003 – BVB Gateway
+
 
 
 \---
@@ -473,4 +489,6 @@ Acest document se actualizează:
 |----------|------|-------|------------|
 
 | 1.0 | 2026-07-07 | ESTINVEST \& ChatGPT | Prima versiune |
+
+| 1.1 | 2026-10-06 | ESTINVEST \& ChatGPT | Actualizare status proiect și documentație; aliniere ESTINVEST Gateway cu ADR-005…ADR-010 |
 
