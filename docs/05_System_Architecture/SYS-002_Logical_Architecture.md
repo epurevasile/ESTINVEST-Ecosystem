@@ -4,10 +4,20 @@
 |-------------|----------|
 | Document | SYS-002_Logical_Architecture |
 | Proiect | ESTINVEST Ecosystem |
-| Versiune | 1.0 |
+| Versiune | 1.1 |
 | Status | Approved |
 | Domeniu | Enterprise Architecture |
 | Data | Iulie 2026 |
+| Ultima actualizare | 2026-10-06 |
+
+---
+
+# Change Log
+
+| Versiune | Data | Modificări |
+|----------|------|------------|
+| 1.0 | Iulie 2026 | Prima versiune |
+| 1.1 | 2026-10-06 | Aliniere cu ADR-005 privind traseul BVB și excepția market data read-only; clarificare Market Data Service |
 
 ---
 
@@ -88,6 +98,8 @@ Aceste servicii nu implementează procese de business specifice unei aplicații.
 - Scheduler Service
 - Configuration Service
 
+Market Data Service este un serviciu planificat. Acest document nu îi atribuie rolul de sursă pentru market data BVB și nu înlocuiește calea aprobată ESTINVEST Gateway → ESTtrade pentru market data read-only conform ADR-005.
+
 ---
 
 # 6. Relația dintre Business Applications și Enterprise Services
@@ -160,6 +172,17 @@ Sisteme Externe
 
 Evenimentele și răspunsurile urmează traseul invers.
 
+Pentru fluxurile business către BVB, traseul canonic este:
+
+BackOffice
+→ Integration Hub
+→ ESTINVEST Gateway
+→ BVB / Arena Gateway
+
+Returul urmează traseul invers.
+
+ESTtrade poate consuma direct din ESTINVEST Gateway numai market data read-only conform ADR-005. Această excepție nu autorizează trading direct și nu reprezintă un bypass general al BackOffice sau Integration Hub.
+
 ---
 
 # 9. Guvernanță
@@ -215,3 +238,12 @@ Acest document completează:
 Arhitectura logică separă clar aplicațiile de business de serviciile enterprise, oferind o bază solidă pentru dezvoltarea și extinderea ecosistemului ESTINVEST.
 
 Această separare permite reutilizarea serviciilor comune, evoluția independentă a aplicațiilor și integrarea facilă a unor noi componente fără modificări fundamentale ale arhitecturii.
+
+---
+
+# Version History
+
+| Versiune | Data | Modificări |
+|----------|------|------------|
+| 1.0 | Iulie 2026 | Prima versiune |
+| 1.1 | 2026-10-06 | Aliniere cu ADR-005 privind traseul BVB și excepția market data read-only; clarificare Market Data Service |
