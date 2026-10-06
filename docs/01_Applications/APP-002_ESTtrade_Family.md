@@ -4,10 +4,20 @@
 |-------------|----------|
 | Document | APP-002_ESTtrade_Family |
 | Proiect | ESTINVEST Ecosystem |
-| Versiune | 1.0 |
+| Versiune | 1.1 |
 | Status | Approved |
 | Domeniu | Applications |
 | Data | Iulie 2026 |
+| Ultima actualizare | 2026-10-06 |
+
+---
+
+# Change Log
+
+| Versiune | Data | Modificări |
+|----------|------|------------|
+| 1.0 | Iulie 2026 | Prima versiune |
+| 1.1 | 2026-10-06 | Aliniere cu ADR-005 privind traseul business și excepția market data read-only |
 
 ---
 
@@ -29,7 +39,7 @@ ESTtrade este punctul unic de acces pentru:
 - informații de piață;
 - notificări.
 
-Toate funcționalitățile utilizează serviciile furnizate de BackOffice Core.
+Funcționalitățile business utilizează serviciile furnizate de BackOffice Core. Pentru market data read-only se aplică excepția aprobată în ADR-005.
 
 ---
 
@@ -173,14 +183,24 @@ ESTtrade consumă aceste servicii prin API.
 
 # 7. Relația cu Integration Hub
 
+Pentru operațiile business / trading, traseul este:
+
+ESTtrade → BackOffice → Integration Hub → ESTINVEST Gateway → BVB / Arena Gateway
+
+ESTtrade nu comunică direct cu Gateway / BVB pentru business.
+
 ESTtrade nu comunică direct cu:
 
-- BVB;
+- BVB (pentru trading / business);
 - Depozitarul Central;
 - banca de decontare;
 - custozi externi.
 
-Toate comunicațiile externe sunt realizate prin BackOffice și Integration Hub.
+Comunicațiile externe de business sunt realizate prin BackOffice și Integration Hub.
+
+Excepție aprobată (ADR-005): ESTtrade poate consuma direct din ESTINVEST Gateway numai market data read-only.
+
+Această excepție nu autorizează order submission, cancel/change, Trade creation, mutații Portfolio / Buying Power, scrieri Settlement / Ledger și nu reprezintă un bypass general al BackOffice sau Integration Hub.
 
 ---
 
@@ -231,3 +251,12 @@ Acest document completează:
 ESTtrade reprezintă familia oficială a canalelor de tranzacționare și operațiuni financiare din ecosistemul ESTINVEST.
 
 Separarea dintre interfața utilizator și logica de business permite reutilizarea serviciilor BackOffice, dezvoltarea independentă a canalelor și integrarea facilă a unor noi modalități de acces.
+
+---
+
+# Version History
+
+| Versiune | Data | Modificări |
+|----------|------|------------|
+| 1.0 | Iulie 2026 | Prima versiune |
+| 1.1 | 2026-10-06 | Aliniere cu ADR-005 privind traseul business și excepția market data read-only |
