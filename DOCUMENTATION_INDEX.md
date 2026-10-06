@@ -16,7 +16,7 @@
 
 | Owner              | Enterprise Architecture |
 
-| Ultima actualizare | 2026-07-07              |
+| Ultima actualizare | 2026-10-06              |
 
 
 
@@ -132,11 +132,11 @@ ESTINVEST-Ecosystem
 
 | ------- | ------------------- | ------ |
 
-| INT-001 | REST API Standards  | ⏳      |
+| INT-001 | Integration Hub | ✅ |
 
 | INT-002 | FIX Integration     | ⏳      |
 
-| INT-003 | Gateway Integration | ⏳      |
+| INT-003 | BVB Gateway | ✅ |
 
 | INT-004 | External Systems    | ⏳      |
 
@@ -283,6 +283,18 @@ ESTINVEST-Ecosystem
 | ADR-003 | Client Model               | ✅      |
 
 | ADR-004 | Unified Ledger             | ✅      |
+
+| ADR-005 | ESTINVEST Gateway System Boundary and Role | ✅ |
+
+| ADR-006 | Integration Hub ↔ ESTINVEST Gateway Communication Architecture | ✅ |
+
+| ADR-007 | ESTINVEST Gateway Technical Persistence and Reliable Delivery | ✅ |
+
+| ADR-008 | BVB Arena Gateway Protocol Compliance | ✅ |
+
+| ADR-009 | Gateway Connector Reuse and Arena Simulator Strategy | ✅ |
+
+| ADR-010 | ESTINVEST Gateway v1 Functional Scope | ✅ |
 
 
 
