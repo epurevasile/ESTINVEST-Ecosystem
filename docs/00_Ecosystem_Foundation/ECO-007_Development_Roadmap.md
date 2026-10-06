@@ -12,7 +12,7 @@
 
 | Categorie | Ecosystem Foundation |
 
-| Versiune | 1.0 |
+| Versiune | 1.1 |
 
 | Status | Approved |
 
@@ -22,7 +22,7 @@
 
 | Owner | Enterprise Architecture |
 
-| Ultima actualizare | 2026-07-07 |
+| Ultima actualizare | 2026-10-06 |
 
 
 
@@ -39,6 +39,8 @@
 |----------|------|------------|
 
 | 1.0 | 2026-07-07 | Prima versiune |
+
+| 1.1 | 2026-10-06 | Aliniere roadmap Gateway cu baseline-ul arhitectural ADR-005…ADR-010 |
 
 
 
@@ -229,6 +231,10 @@ Obiective:
 \- integrarea cu Depozitarul Central;
 
 \- integrarea cu partenerii externi (ex. KBC).
+
+
+
+Pentru conectivitatea BVB, baseline-ul arhitectural este definit de ADR-005…ADR-010. ESTINVEST Gateway este componenta specializată de market connectivity, iar Arena Gateway Simulator este test double în ecosistemul de development/test al ESTINVEST Gateway. Statusurile din acest roadmap descriu stadiul de implementare și nu modifică statusul deciziilor arhitecturale aprobate.
 
 
 
@@ -430,6 +436,18 @@ Roadmap-ul este revizuit periodic de echipa de arhitectură și actualizat în f
 
 \- STD-APP-001 – Application Documentation Standard
 
+\- ADR-005 – ESTINVEST Gateway System Boundary and Role
+
+\- ADR-006 – Integration Hub ↔ ESTINVEST Gateway Communication Architecture
+
+\- ADR-007 – ESTINVEST Gateway Technical Persistence and Reliable Delivery
+
+\- ADR-008 – BVB Arena Gateway Protocol Compliance
+
+\- ADR-009 – Gateway Connector Reuse and Arena Simulator Strategy
+
+\- ADR-010 – ESTINVEST Gateway v1 Functional Scope
+
 
 
 \---
@@ -445,4 +463,6 @@ Roadmap-ul este revizuit periodic de echipa de arhitectură și actualizat în f
 |----------|------|-------|------------|
 
 | 1.0 | 2026-07-07 | ESTINVEST \& ChatGPT | Prima versiune |
+
+| 1.1 | 2026-10-06 | ESTINVEST \& ChatGPT | Aliniere roadmap Gateway cu baseline-ul arhitectural ADR-005…ADR-010 |
 
