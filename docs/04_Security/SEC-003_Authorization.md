@@ -3,6 +3,8 @@
 | Proprietate | Valoare |
 |-------------|----------|
 | Document | SEC-003_Authorization |
+| Document ID | SEC-003 |
+| Titlu | Authorization |
 | Proiect | ESTINVEST Ecosystem |
 | Versiune | 1.0 |
 | Status | Draft |
