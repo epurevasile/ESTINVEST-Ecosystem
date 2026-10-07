@@ -66,8 +66,6 @@ Exemple:
 
 
 
-\* AI Collaboration Guide
-
 \* Prompt Engineering Guide
 
 \* Best Practices
