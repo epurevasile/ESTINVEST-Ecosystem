@@ -158,19 +158,19 @@ ESTINVEST-Ecosystem
 
 
 
-| ID       | Document            | Status |
+| ID       | Document                     | Status   |
 
-| -------- | ------------------- | ------ |
+| -------- | ---------------------------- | -------- |
 
-| DATA-001 | Data Model Overview | ⏳      |
+| DATA-001 | Data Architecture Principles | Approved |
 
-| DATA-002 | Master Data         | ⏳      |
+| DATA-002 | Master Data Model            | Draft    |
 
-| DATA-003 | Reference Data      | ⏳      |
+| DATA-003 | Reference Data Model         | Draft    |
 
-| DATA-004 | Unified Ledger      | ⏳      |
+| DATA-004 | Transactional Data Model     | Draft    |
 
-| DATA-005 | Database Standards  | ⏳      |
+| DATA-005 | Data Governance              | Draft    |
 
 
 
