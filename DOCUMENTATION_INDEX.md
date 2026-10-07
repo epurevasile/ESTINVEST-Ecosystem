@@ -298,17 +298,17 @@ ESTINVEST-Ecosystem
 
 | ADR-004 | Unified Ledger             | ⏳      |
 
-| ADR-005 | ESTINVEST Gateway System Boundary and Role | ✅ |
+| ADR-005 | ESTINVEST Gateway System Boundary and Role | Approved |
 
-| ADR-006 | Integration Hub ↔ ESTINVEST Gateway Communication Architecture | ✅ |
+| ADR-006 | Integration Hub ↔ ESTINVEST Gateway Communication Architecture | Approved |
 
-| ADR-007 | ESTINVEST Gateway Technical Persistence and Reliable Delivery | ✅ |
+| ADR-007 | ESTINVEST Gateway Technical Persistence and Reliable Delivery | Approved |
 
-| ADR-008 | BVB Arena Gateway Protocol Compliance | ✅ |
+| ADR-008 | BVB Arena Gateway Protocol Compliance | Approved |
 
-| ADR-009 | Gateway Connector Reuse and Arena Simulator Strategy | ✅ |
+| ADR-009 | Gateway Connector Reuse and Arena Simulator Strategy | Approved |
 
-| ADR-010 | ESTINVEST Gateway v1 Functional Scope | ✅ |
+| ADR-010 | ESTINVEST Gateway v1 Functional Scope | Approved |
 
 
 
