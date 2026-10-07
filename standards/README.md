@@ -32,11 +32,15 @@ standards
 
 │
 
-├── 00\_Project\_Methodology
-
 ├── AI
 
+├── API
+
 ├── Coding
+
+├── Database
+
+├── Development
 
 ├── Documentation
 
@@ -55,22 +59,6 @@ standards
 
 
 \# Conținut
-
-
-
-\## 00\_Project\_Methodology
-
-
-
-Metodologia oficială de dezvoltare a proiectului.
-
-
-
-Exemple:
-
-
-
-\---
 
 
 
