@@ -254,23 +254,27 @@ ESTINVEST-Ecosystem
 
 
 
-| Categorie           | Status |
+| ID          | Document                           | Status   |
 
-| ------------------- | ------ |
+| ----------- | ---------------------------------- | -------- |
 
-| Project Methodology | ✅      |
+| STD-AI-001  | AI Development Standard            | Approved |
 
-| AI                  | ✅      |
+| STD-API-001 | API Design Standard                | Approved |
 
-| Coding              | ⏳      |
+| STD-COD-001 | Coding Standard                    | Approved |
 
-| Documentation       | ⏳      |
+| STD-DB-001  | Database Design Standard           | Approved |
 
-| Git                 | ⏳      |
+| STD-DEV-001 | Development Workflow Standard      | Approved |
 
-| Naming              | ⏳      |
+| STD-APP-001 | Application Documentation Standard | Approved |
 
-| Security            | ⏳      |
+| STD-GIT-001 | Git Workflow Standard              | Approved |
+
+| STD-NAM-001 | Naming Convention Standard         | Approved |
+
+| STD-SEC-001 | Security Standard                  | Approved |
 
 
 
