@@ -202,15 +202,15 @@ Exemple:
 
 
 
-\* ECO-001
+\* ECO-xxx
 
-\* APP-001
+\* APP-xxx
 
-\* ADR-001
+\* ADR-xxx
 
-\* STD-001
+\* STD-xxx
 
-\* PROMPT-001
+\* PROMPT-xxx
 
 
 
