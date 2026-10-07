@@ -3,6 +3,8 @@
 | Proprietate | Valoare |
 |-------------|----------|
 | Document | DATA-002_Master_Data_Model |
+| Document ID | DATA-002 |
+| Titlu | Master Data Model |
 | Proiect | ESTINVEST Ecosystem |
 | Versiune | 1.0 |
 | Status | Draft |
