@@ -106,9 +106,9 @@ Obiectivul ecosistemului este dezvoltarea unei platforme integrate pentru activi
 
 | 03 | ESTtrade | În proiectare |
 
-| 04 | Gateway Connector | Planificat |
+| 04 | ESTINVEST Gateway | Planificat |
 
-| 05 | Gateway Simulator | Planificat |
+| 05 | Arena Gateway Simulator | Planificat |
 
 | 06 | Reporting Service | Planificat |
 
@@ -222,9 +222,9 @@ Obiective:
 
 
 
-\- Gateway Connector;
+\- ESTINVEST Gateway;
 
-\- Gateway Simulator;
+\- Arena Gateway Simulator;
 
 \- integrarea cu BVB;
 
