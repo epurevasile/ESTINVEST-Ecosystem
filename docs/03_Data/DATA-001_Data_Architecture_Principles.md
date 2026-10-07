@@ -4,6 +4,8 @@
 | Proprietate | Valoare |
 |-------------|----------|
 | Document | DATA-001_Data_Architecture_Principles |
+| Document ID | DATA-001 |
+| Titlu | Data Architecture Principles |
 | Proiect | ESTINVEST Ecosystem |
 | Versiune | 1.0 |
 | Status | Approved |
