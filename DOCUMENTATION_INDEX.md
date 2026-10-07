@@ -378,5 +378,7 @@ ESTINVEST-Ecosystem
 
 \* Pentru documentele care definesc explicit `Status` sau `Stare` în propriul header, indexul reproduce literal acel status; simbolurile din legendă se utilizează pentru elementele fără lifecycle status explicit în documentul propriu.
 
+\* Pentru fișierele `*_Template.md`, câmpul `Status` din conținut reprezintă valoarea implicită sau exemplul de status al documentului instanțiat și nu lifecycle-ul template-ului ca artefact; în secțiunea Templates, simbolul `✅` indică faptul că template-ul ca artefact reutilizabil este Finalizat.
+
 
 
