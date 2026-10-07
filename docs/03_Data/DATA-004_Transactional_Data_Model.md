@@ -3,6 +3,8 @@
 | Proprietate | Valoare |
 |-------------|----------|
 | Document | DATA-004_Transactional_Data_Model |
+| Document ID | DATA-004 |
+| Titlu | Transactional Data Model |
 | Proiect | ESTINVEST Ecosystem |
 | Versiune | 1.0 |
 | Status | Draft |
