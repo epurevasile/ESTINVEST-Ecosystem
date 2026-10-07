@@ -70,10 +70,6 @@ Exemple:
 
 
 
-\* STD-000 – Project Working Method
-
-
-
 \---
 
 
