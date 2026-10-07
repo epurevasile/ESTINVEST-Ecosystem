@@ -614,8 +614,6 @@ Standardul poate fi extins pentru:
 
 \- STD-000 Project Working Method
 
-\- STD-AI-000 AI Working Method
-
 \- ECO-001 Ecosystem Context
 
 \- ECO-002 System Landscape
