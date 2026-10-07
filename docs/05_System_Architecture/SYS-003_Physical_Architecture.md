@@ -3,6 +3,8 @@
 | Proprietate | Valoare |
 |-------------|----------|
 | Document | SYS-003_Physical_Architecture |
+| Document ID | SYS-003 |
+| Titlu | Physical Architecture |
 | Proiect | ESTINVEST Ecosystem |
 | Versiune | 1.0 |
 | Status | Draft |
