@@ -3,6 +3,8 @@
 | Proprietate | Valoare |
 |-------------|----------|
 | Document | DATA-003_Reference_Data_Model |
+| Document ID | DATA-003 |
+| Titlu | Reference Data Model |
 | Proiect | ESTINVEST Ecosystem |
 | Versiune | 1.0 |
 | Status | Draft |
