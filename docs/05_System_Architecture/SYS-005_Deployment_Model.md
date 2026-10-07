@@ -3,6 +3,8 @@
 | Proprietate | Valoare |
 |-------------|----------|
 | Document | SYS-005_Deployment_Model |
+| Document ID | SYS-005 |
+| Titlu | Deployment Model |
 | Proiect | ESTINVEST Ecosystem |
 | Versiune | 1.0 |
 | Status | Draft |
