@@ -84,6 +84,34 @@ Exemple:
 
 
 
+\## API
+
+
+
+Standarde pentru:
+
+
+
+\* proiectarea, implementarea și documentarea API-urilor;
+
+\* consistență și interoperabilitate;
+
+\* REST, JSON și HTTPS;
+
+\* versionare;
+
+\* autentificare și autorizare;
+
+\* documentare OpenAPI;
+
+\* naming URI, metode HTTP și gestionarea erorilor.
+
+
+
+\---
+
+
+
 \## Coding
 
 
@@ -101,6 +129,62 @@ Reguli privind:
 \* structura modulelor;
 
 \* gestionarea erorilor.
+
+
+
+\---
+
+
+
+\## Database
+
+
+
+Standarde pentru:
+
+
+
+\* proiectarea bazelor de date;
+
+\* Single Source of Truth;
+
+\* integritate referențială și audit;
+
+\* migrații controlate;
+
+\* securitate și documentare;
+
+\* tehnologii de baze de date și ORM aprobate;
+
+\* convenții de naming.
+
+
+
+\---
+
+
+
+\## Development
+
+
+
+Standarde pentru:
+
+
+
+\* metodologia de dezvoltare software;
+
+\* etapele și responsabilitățile procesului de dezvoltare;
+
+\* Architecture First și Documentation First;
+
+\* Security by Design, API First și Database by Design;
+
+\* testare și code review;
+
+\* deployment și monitoring;
+
+\* quality gates și continuous improvement.
 
 
 
