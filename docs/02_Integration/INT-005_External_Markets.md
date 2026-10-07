@@ -3,6 +3,8 @@
 | Proprietate | Valoare |
 |-------------|----------|
 | Document | INT-005_External_Markets |
+| Document ID | INT-005 |
+| Titlu | External Markets |
 | Proiect | ESTINVEST Ecosystem |
 | Versiune | 1.0 |
 | Status | Draft |
