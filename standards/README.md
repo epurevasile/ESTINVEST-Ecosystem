@@ -90,8 +90,6 @@ Exemple:
 
 
 
-\* AI Working Method
-
 \* AI Collaboration Guide
 
 \* Prompt Engineering
