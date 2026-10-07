@@ -3,6 +3,8 @@
 | Proprietate | Valoare |
 |-------------|----------|
 | Document | AI-001_AI_Assistant_Architecture |
+| Document ID | AI-001 |
+| Titlu | AI Assistant Architecture |
 | Proiect | ESTINVEST Ecosystem |
 | Versiune | 1.0 |
 | Status | Draft |
