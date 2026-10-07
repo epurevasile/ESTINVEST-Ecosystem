@@ -202,19 +202,21 @@ ESTINVEST-Ecosystem
 
 
 
-| ID      | Document                   | Status |
+| ID      | Document                  | Status   |
 
-| ------- | -------------------------- | ------ |
+| ------- | ------------------------- | -------- |
 
-| SYS-001 | Logical Architecture       | ⏳      |
+| SYS-001 | Ecosystem Architecture    | Approved |
 
-| SYS-002 | Physical Architecture      | ⏳      |
+| SYS-002 | Logical Architecture      | Approved |
 
-| SYS-003 | Deployment Architecture    | ⏳      |
+| SYS-003 | Physical Architecture     | Draft    |
 
-| SYS-004 | Infrastructure Overview    | ⏳      |
+| SYS-004 | Application Communication | Draft    |
 
-| SYS-005 | Monitoring \& Observability | ⏳      |
+| SYS-005 | Deployment Model          | Draft    |
+
+| SYS-006 | Technology Stack          | Draft    |
 
 
 
