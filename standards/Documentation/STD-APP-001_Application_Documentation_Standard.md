@@ -612,8 +612,6 @@ Standardul poate fi extins pentru:
 
 
 
-\- STD-000 Project Working Method
-
 \- ECO-001 Ecosystem Context
 
 \- ECO-002 System Landscape
