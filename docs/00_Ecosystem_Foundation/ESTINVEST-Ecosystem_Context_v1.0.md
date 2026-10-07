@@ -336,11 +336,11 @@ Fiecare proiect trebuie să conțină:
 
 
 
-Milestone actual:
+Milestone finalizat:
 
 
 
-\*\*ESTINVEST-Ecosystem v1.0\*\*
+\*\*M1 – Ecosystem Foundation / ESTINVEST-Ecosystem v1.0\*\*
 
 
 
@@ -348,7 +348,15 @@ Status:
 
 
 
-Finalizat.
+\*\*Finalizat pentru Foundation.\*\*
+
+
+
+Milestone următor:
+
+
+
+\*\*M2 – BackOffice Core\*\*
 
 
 
@@ -370,7 +378,7 @@ Repository-ul conține:
 
 
 
-Acest repository este considerat stabil și intră în faza de mentenanță.
+Repository-ul ESTINVEST-Ecosystem este activ și continuă să evolueze odată cu dezvoltarea aplicațiilor, integrarea componentelor și actualizarea documentației.
 
 
 
