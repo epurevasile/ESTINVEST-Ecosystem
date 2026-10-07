@@ -56,9 +56,9 @@ Componentele principale sunt:
 
 \- ESTtrade
 
-\- Gateway Connector
+\- ESTINVEST Gateway
 
-\- Gateway Simulator
+\- Arena Gateway Simulator
 
 \- Reporting Service
 
@@ -392,9 +392,9 @@ Prioritățile ecosistemului sunt:
 
 3\. ESTtrade
 
-4\. Gateway Connector
+4\. ESTINVEST Gateway
 
-5\. Gateway Simulator
+5\. Arena Gateway Simulator
 
 
 
