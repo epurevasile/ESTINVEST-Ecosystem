@@ -106,25 +106,21 @@ ESTINVEST-Ecosystem
 
 
 
-| ID      | Document                  | Status |
+| ID      | Document             | Status   |
 
-| ------- | ------------------------- | ------ |
+| ------- | -------------------- | -------- |
 
-| APP-001 | ESTINVEST Onboarding      | ⏳      |
+| APP-001 | ESTINVEST Onboarding | Draft    |
 
-| APP-002 | ESTINVEST BackOffice Core | ⏳      |
+| APP-002 | ESTtrade Family      | Approved |
 
-| APP-003 | ESTtrade                  | ⏳      |
+| APP-003 | BackOffice Core      | Draft    |
 
-| APP-004 | Gateway Connector         | ⏳      |
+| APP-004 | AI Assistant         | Draft    |
 
-| APP-005 | Gateway Simulator         | ⏳      |
+| APP-005 | Mobile App           | Draft    |
 
-| APP-006 | Reporting Service         | ⏳      |
-
-| APP-007 | Notification Service      | ⏳      |
-
-| APP-008 | AI Services               | ⏳      |
+| APP-006 | Reporting Services   | Draft    |
 
 
 
