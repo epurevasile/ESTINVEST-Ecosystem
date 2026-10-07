@@ -18,7 +18,11 @@ Aceste prompturi standardizează colaborarea cu modelele AI și asigură rezulta
 
 
 
-\# Structura
+\# Structura planificată
+
+
+
+Structura de mai jos reprezintă organizarea planificată a bibliotecii de prompturi; directoarele se creează numai atunci când există artefacte reale care trebuie organizate în categoria respectivă.
 
 
 
@@ -51,6 +55,10 @@ prompts
 
 
 \# Conținut
+
+
+
+Secțiunile de mai jos descriu categoriile planificate ale bibliotecii și nu reprezintă inventarul curent al fișierelor existente.
 
 
 
