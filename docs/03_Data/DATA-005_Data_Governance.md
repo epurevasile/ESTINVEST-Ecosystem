@@ -3,6 +3,8 @@
 | Proprietate | Valoare |
 |-------------|----------|
 | Document | DATA-005_Data_Governance |
+| Document ID | DATA-005 |
+| Titlu | Data Governance |
 | Proiect | ESTINVEST Ecosystem |
 | Versiune | 1.0 |
 | Status | Draft |
