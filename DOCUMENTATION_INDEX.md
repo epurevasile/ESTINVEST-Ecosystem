@@ -276,13 +276,13 @@ ESTINVEST-Ecosystem
 
 | ------- | -------------------------- | ------ |
 
-| ADR-001 | Onboarding Uses MariaDB    | ✅      |
+| ADR-001 | Onboarding Uses MariaDB    | ⏳      |
 
-| ADR-002 | BackOffice Uses PostgreSQL | ✅      |
+| ADR-002 | BackOffice Uses PostgreSQL | ⏳      |
 
-| ADR-003 | Client Model               | ✅      |
+| ADR-003 | Client Model               | ⏳      |
 
-| ADR-004 | Unified Ledger             | ✅      |
+| ADR-004 | Unified Ledger             | ⏳      |
 
 | ADR-005 | ESTINVEST Gateway System Boundary and Role | ✅ |
 
