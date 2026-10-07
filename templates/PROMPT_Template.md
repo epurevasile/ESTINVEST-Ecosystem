@@ -266,7 +266,7 @@ Modificările importante trebuie documentate în istoricul versiunilor.
 
 | STD-AI-000 | AI Working Method                 |
 
-| STD-AI-001 | AI Collaboration Guide            |
+| STD-AI-001 | AI Development Standard |
 
 | APP-xxx    | Documentația aplicației relevante |
 
