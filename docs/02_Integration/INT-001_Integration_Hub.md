@@ -3,6 +3,8 @@
 | Proprietate | Valoare |
 |-------------|----------|
 | Document | INT-001_Integration_Hub |
+| Document ID | INT-001 |
+| Titlu | Integration Hub |
 | Proiect | ESTINVEST Ecosystem |
 | Versiune | 1.1 |
 | Status | Approved |
