@@ -3,6 +3,8 @@
 | Proprietate | Valoare |
 |-------------|----------|
 | Document | SEC-004_DORA_Compliance |
+| Document ID | SEC-004 |
+| Titlu | DORA Compliance |
 | Proiect | ESTINVEST Ecosystem |
 | Versiune | 1.0 |
 | Status | Draft |
