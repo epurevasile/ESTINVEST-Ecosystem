@@ -3,6 +3,8 @@
 | Proprietate | Valoare |
 |-------------|----------|
 | Document | SYS-001_Ecosystem_Architecture |
+| Document ID | SYS-001 |
+| Titlu | Ecosystem Architecture |
 | Proiect | ESTINVEST Ecosystem |
 | Versiune | 1.1 |
 | Status | Approved |
