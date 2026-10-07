@@ -3,6 +3,8 @@
 | Proprietate | Valoare |
 |-------------|----------|
 | Document | APP-002_ESTtrade_Family |
+| Document ID | APP-002 |
+| Titlu | ESTtrade Family |
 | Proiect | ESTINVEST Ecosystem |
 | Versiune | 1.1 |
 | Status | Approved |
