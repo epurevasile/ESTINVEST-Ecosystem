@@ -3,6 +3,8 @@
 | Proprietate | Valoare |
 |-------------|----------|
 | Document | APP-006_Reporting_Services |
+| Document ID | APP-006 |
+| Titlu | Reporting Services |
 | Proiect | ESTINVEST Ecosystem |
 | Versiune | 1.0 |
 | Status | Draft |
