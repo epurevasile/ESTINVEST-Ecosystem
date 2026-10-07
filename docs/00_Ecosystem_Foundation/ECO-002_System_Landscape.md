@@ -369,7 +369,7 @@ In Development
 
 ---
 
-# 8.4 Gateway Connector
+# 8.4 ESTINVEST Gateway
 
 ## Scop
 
