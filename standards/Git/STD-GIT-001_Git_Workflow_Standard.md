@@ -530,7 +530,7 @@ Orice abatere de la acest standard trebuie justificată și documentată.
 
 
 
-\- STD-DEV-001 – Development Workflow
+\- STD-DEV-001 – Development Workflow Standard
 
 \- STD-APP-001 – Application Documentation Standard
 
