@@ -3,6 +3,8 @@
 | Proprietate | Valoare |
 |-------------|----------|
 | Document | SYS-002_Logical_Architecture |
+| Document ID | SYS-002 |
+| Titlu | Logical Architecture |
 | Proiect | ESTINVEST Ecosystem |
 | Versiune | 1.1 |
 | Status | Approved |
