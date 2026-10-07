@@ -270,7 +270,7 @@ Ecosistemul comunică cu:
 
 
 
-\- Bursa de Valori București (Gateway BVB);
+\- Bursa de Valori București (BVB / Arena Gateway);
 
 \- Depozitarul Central;
 
