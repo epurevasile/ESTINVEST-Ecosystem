@@ -264,8 +264,6 @@ Modificările importante trebuie documentate în istoricul versiunilor.
 
 | ECO-002    | System Landscape                  |
 
-| STD-AI-000 | AI Working Method                 |
-
 | STD-AI-001 | AI Development Standard |
 
 | APP-xxx    | Documentația aplicației relevante |
