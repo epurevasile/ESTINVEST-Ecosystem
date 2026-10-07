@@ -3,6 +3,8 @@
 | Proprietate | Valoare |
 |-------------|----------|
 | Document | APP-004_AI_Assistant |
+| Document ID | APP-004 |
+| Titlu | AI Assistant |
 | Proiect | ESTINVEST Ecosystem |
 | Versiune | 1.0 |
 | Status | Draft |
