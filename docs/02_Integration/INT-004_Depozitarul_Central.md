@@ -3,6 +3,8 @@
 | Proprietate | Valoare |
 |-------------|----------|
 | Document | INT-004_Depozitarul_Central |
+| Document ID | INT-004 |
+| Titlu | Depozitarul Central |
 | Proiect | ESTINVEST Ecosystem |
 | Versiune | 1.0 |
 | Status | Draft |
