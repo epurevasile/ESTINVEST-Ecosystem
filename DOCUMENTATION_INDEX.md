@@ -232,17 +232,17 @@ ESTINVEST-Ecosystem
 
 
 
-| ID     | Document          | Status |
+| ID     | Document                  | Status |
 
-| ------ | ----------------- | ------ |
+| ------ | ------------------------- | ------ |
 
-| AI-001 | ChatGPT Context   | ⏳      |
+| AI-001 | AI Assistant Architecture | Draft  |
 
-| AI-002 | Cursor Context    | ⏳      |
+| AI-002 | Knowledge Management      | Draft  |
 
-| AI-003 | Claude Context    | ⏳      |
+| AI-003 | RAG Architecture          | Draft  |
 
-| AI-004 | Shared AI Context | ⏳      |
+| AI-004 | AI Governance             | Draft  |
 
 
 
