@@ -132,17 +132,21 @@ ESTINVEST-Ecosystem
 
 
 
-| ID      | Document            | Status |
+| ID      | Document             | Status   |
 
-| ------- | ------------------- | ------ |
+| ------- | -------------------- | -------- |
 
-| INT-001 | Integration Hub | ✅ |
+| INT-001 | Integration Hub      | Approved |
 
-| INT-002 | FIX Integration     | ⏳      |
+| INT-002 | Banking API          | Draft    |
 
-| INT-003 | BVB Gateway | ✅ |
+| INT-003 | BVB Gateway          | Approved |
 
-| INT-004 | External Systems    | ⏳      |
+| INT-004 | Depozitarul Central  | Draft    |
+
+| INT-005 | External Markets     | Draft    |
+
+| INT-006 | External Custodians  | Draft    |
 
 
 
