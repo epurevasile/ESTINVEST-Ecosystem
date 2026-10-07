@@ -3,6 +3,8 @@
 | Proprietate | Valoare |
 |-------------|----------|
 | Document | INT-003_BVB_Gateway |
+| Document ID | INT-003 |
+| Titlu | BVB Gateway |
 | Proiect | ESTINVEST Ecosystem |
 | Versiune | 1.0 |
 | Status | Approved |
