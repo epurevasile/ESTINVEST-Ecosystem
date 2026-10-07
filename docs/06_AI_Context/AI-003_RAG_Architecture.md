@@ -3,6 +3,8 @@
 | Proprietate | Valoare |
 |-------------|----------|
 | Document | AI-003_RAG_Architecture |
+| Document ID | AI-003 |
+| Titlu | RAG Architecture |
 | Proiect | ESTINVEST Ecosystem |
 | Versiune | 1.0 |
 | Status | Draft |
