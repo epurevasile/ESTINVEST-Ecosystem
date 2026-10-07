@@ -522,29 +522,43 @@ Au fost aprobate următoarele principii:
 
 &#x20;      ESTINVEST BackOffice Core
 
-&#x20;                   │
+&#x20;           │
 
-&#x20;       ┌───────────┼─────────────┐
+&#x20;           ├──────────► ESTtrade
 
-&#x20;       │           │             │
+&#x20;           ├──────────► Reporting
 
-&#x20;       ▼           ▼             ▼
+&#x20;           ├──────────► Notification
 
-&#x20;   ESTtrade   Reporting      Notification
+&#x20;           │
+
+&#x20;           ▼
+
+&#x20;    Integration Hub
+
+&#x20;           │
+
+&#x20;       ┌───┴───────────────────┐
+
+&#x20;       │                       │
+
+&#x20;       ▼                       ▼
+
+&#x20; ESTINVEST Gateway     Depozitarul Central
 
 &#x20;       │
 
 &#x20;       ▼
 
-&#x20;  Gateway BVB
-
-&#x20;       │
-
-&#x20;       ▼
-
-Depozitarul Central
+&#x20; BVB / Arena Gateway
 
 ```
+
+
+
+ESTtrade poate consuma direct din ESTINVEST Gateway numai market data read-only, conform ADR-005.
+
+Această excepție nu autorizează trading direct.
 
 
 
