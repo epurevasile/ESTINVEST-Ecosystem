@@ -3,6 +3,8 @@
 | Proprietate | Valoare |
 |-------------|----------|
 | Document | SEC-001_IAM |
+| Document ID | SEC-001 |
+| Titlu | IAM |
 | Proiect | ESTINVEST Ecosystem |
 | Versiune | 1.0 |
 | Status | Approved |
