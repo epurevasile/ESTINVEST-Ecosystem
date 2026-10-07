@@ -288,7 +288,7 @@ Respectarea standardului va fi verificată prin:
 
 | STD-AI-000 | AI Working Method      |
 
-| STD-AI-001 | AI Collaboration Guide |
+| STD-AI-001 | AI Development Standard |
 
 
 
