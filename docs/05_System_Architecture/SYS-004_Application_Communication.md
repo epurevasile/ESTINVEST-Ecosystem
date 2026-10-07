@@ -3,6 +3,8 @@
 | Proprietate | Valoare |
 |-------------|----------|
 | Document | SYS-004_Application_Communication |
+| Document ID | SYS-004 |
+| Titlu | Application Communication |
 | Proiect | ESTINVEST Ecosystem |
 | Versiune | 1.0 |
 | Status | Draft |
