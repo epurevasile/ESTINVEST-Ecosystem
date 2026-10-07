@@ -72,21 +72,29 @@ ESTINVEST-Ecosystem
 
 
 
-| ID      | Document                       | Status |
+| ID      | Document                    | Status   |
 
-| ------- | ------------------------------ | ------ |
+| ------- | --------------------------- | -------- |
 
-| ECO-001 | Ecosystem Context              | ✅      |
+| ECO-001 | ESTINVEST Ecosystem Context | Draft    |
 
-| ECO-002 | System Landscape               | ✅      |
+| ECO-002 | System Landscape            | Draft    |
 
-| ECO-003 | Data Ownership Matrix          | 🟡     |
+| ECO-003 | Data Ownership Matrix       | Draft    |
 
-| ECO-004 | Integration Architecture       | 🟡     |
+| ECO-004 | Integration Architecture    | Draft    |
 
-| ECO-005 | Application Responsibilities   | ⏳      |
+| ECO-005 | Repository Roles            | Draft    |
 
-| ECO-006 | Common Architecture Principles | ⏳      |
+| ECO-006 | Technology Stack            | Approved |
+
+| ECO-007 | Development Roadmap         | Approved |
+
+| ECO-008 | Ecosystem Glossary          | Approved |
+
+| ECO-009 | Ecosystem Principles        | Approved |
+
+| ECO-010 | Project Status              | Active   |
 
 
 
@@ -361,6 +369,8 @@ ESTINVEST-Ecosystem
 \* Toate modificările sunt urmărite prin Git.
 
 \* Acest index trebuie actualizat ori de câte ori se creează sau se aprobă un document nou.
+
+\* Pentru documentele care definesc explicit `Status` sau `Stare` în propriul header, indexul reproduce literal acel status; simbolurile din legendă se utilizează pentru elementele fără lifecycle status explicit în documentul propriu.
 
 
 
