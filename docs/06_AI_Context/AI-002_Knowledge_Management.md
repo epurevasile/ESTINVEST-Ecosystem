@@ -3,6 +3,8 @@
 | Proprietate | Valoare |
 |-------------|----------|
 | Document | AI-002_Knowledge_Management |
+| Document ID | AI-002 |
+| Titlu | Knowledge Management |
 | Proiect | ESTINVEST Ecosystem |
 | Versiune | 1.0 |
 | Status | Draft |
