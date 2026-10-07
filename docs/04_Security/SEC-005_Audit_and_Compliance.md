@@ -3,6 +3,8 @@
 | Proprietate | Valoare |
 |-------------|----------|
 | Document | SEC-005_Audit_and_Compliance |
+| Document ID | SEC-005 |
+| Titlu | Audit and Compliance |
 | Proiect | ESTINVEST Ecosystem |
 | Versiune | 1.0 |
 | Status | Draft |
