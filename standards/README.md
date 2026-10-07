@@ -90,8 +90,6 @@ Exemple:
 
 
 
-\* AI Collaboration Guide
-
 \* Prompt Engineering
 
 \* AI Review Process
