@@ -284,8 +284,6 @@ Respectarea standardului va fi verificată prin:
 
 | ---------- | ---------------------- |
 
-| STD-000    | Project Working Method |
-
 | STD-AI-001 | AI Development Standard |
 
 
