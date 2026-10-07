@@ -182,19 +182,19 @@ ESTINVEST-Ecosystem
 
 
 
-| ID      | Document                       | Status |
+| ID      | Document             | Status   |
 
-| ------- | ------------------------------ | ------ |
+| ------- | -------------------- | -------- |
 
-| SEC-001 | Security Architecture          | ⏳      |
+| SEC-001 | IAM                  | Approved |
 
-| SEC-002 | Authentication \& Authorization | ⏳      |
+| SEC-002 | Authentication       | Draft    |
 
-| SEC-003 | RBAC Model                     | ⏳      |
+| SEC-003 | Authorization        | Draft    |
 
-| SEC-004 | Audit Architecture             | ⏳      |
+| SEC-004 | DORA Compliance      | Draft    |
 
-| SEC-005 | Data Protection                | ⏳      |
+| SEC-005 | Audit and Compliance | Draft    |
 
 
 
